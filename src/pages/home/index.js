@@ -1,21 +1,54 @@
 import * as React from "react";
-import { Link } from "react-router-dom";
+// import { lang } from "utils";
+
+
+
 import "./index.scss";
-import { lang } from "utils";
+import LangHeader from "./components/LangHeader";
+import MenuHeader from "./components/MenuHeader";
+import SliderHome from "./components/SliderHome";
+import DiscoverOnPoint from "./components/DiscoverOnPoint";
+import ClientsNumber from "./components/ClientsNumber";
+import WhatWeDo from "./components/WhatWeDo";
+import OurProducts from "./components/OurProducts";
+import OurServices from "./components/OurServices";
+import Clients from "./components/Clients";
+import News from "./components/News";
+import TalkOur from "./components/TalkOur";
+import FooterPage from "./components/FooterPage";
 
-const _lang = lang();
-
+// const _lang = lang();
 function Home() {
   return (
     <>
-      <main>
-        <h1>Trang {_lang.title}</h1>
-      </main>
-      <nav>
-        <Link to="/about">About</Link>
-      </nav>
+      {/* lang=========== */}
+      <LangHeader />
+      {/* menu=========== */}
+      <MenuHeader />
+      {/* slider ============== */}
+      <SliderHome />
+      {/* discover on point ========= */}
+      <DiscoverOnPoint />
+      {/* Clients Number ========== */}
+      <ClientsNumber />
+      {/* what we do ========== */}
+      <WhatWeDo />
+      {/* Our Products ========= */}
+      <OurProducts />
+      {/* Our Services ======== */}
+      <OurServices />
+      {/* Clients ========= */}
+      <Clients />
+      {/* News ======= */}
+      <News />
+      {/* TalkOur ======== */}
+      <TalkOur />
+      {/* FooterPage ========= */}
+      <FooterPage />
     </>
   );
 }
+
+
 
 export default Home;

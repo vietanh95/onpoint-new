@@ -1,0 +1,45 @@
+// lang ==============
+.hiJvYXfncP {
+  box-shadow: inset 0px -1px 0px #eeeeee;
+  .tqmZhpQEdd {
+    display: flex;
+    justify-content: space-between;
+    height: 29px;
+    .yfQOwUrrGt {
+    }
+    .TzPafKMhLO {
+      display: flex;
+      align-items: center;
+      .inADnjewHT {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        position: relative;
+        padding: 0 6px;
+        cursor: pointer;
+        color: #00000080;
+        transition: 0.6s all;
+
+        &:hover {
+          color: #000000;
+        }
+
+        &.imZfdWJidy {
+          color: #000000;
+        }
+
+        &::after {
+          position: absolute;
+          content: "|";
+          right: 0;
+        }
+
+        &:last-child {
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

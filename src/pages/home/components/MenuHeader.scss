@@ -1,0 +1,115 @@
+// menu ================
+.iLADtaueIG {
+  height: 76px;
+  display: flex;
+  align-items: center;
+  .ikDOvZxITU {
+    display: flex;
+    justify-content: space-between;
+
+    .kqAdKcHozX {
+      .EWvuKglUKN {
+      }
+    }
+    .ZOuiUtHtvp {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .qrhkBMYcGX {
+        .gGzOKdvNuu {
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+          display: flex;
+          .wzChTCzOBu {
+            margin-right: 7px;
+            padding: 0px 8px 0px 12px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            cursor: pointer;
+
+            .ijgePvHfdq {
+              .dvkRvnvuKA {
+                color: #313331;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+              }
+              .mVtISIbDJs {
+                margin-left: 12px;
+              }
+            }
+
+            .FOsxgdKAoW {
+              position: absolute;
+              top: 100%;
+              right: 0;
+              max-height: 0;
+              overflow: hidden;
+              transition: 0.4s all;
+              width: 200px;
+              background-color: #ffffff;
+
+              .vPNTAJAHGT {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+
+                .mmhezgHPkc {
+                  color: #000000;
+                  padding: 16px;
+                  transition: 0.6s all;
+
+                  &:hover {
+                    background-color: #31333120;
+                  }
+                }
+              }
+            }
+
+            &:hover {
+              background-color: #313331;
+
+              .ijgePvHfdq {
+                .dvkRvnvuKA {
+                  color: #ffffff;
+                }
+                .mVtISIbDJs {
+                }
+              }
+
+              .FOsxgdKAoW {
+                max-height: 1000px;
+                overflow: visible;
+                z-index: 20;
+              }
+            }
+          }
+        }
+      }
+
+      .IQCByjNAdN {
+        width: 109px;
+        height: 44px;
+        background: #ffffff;
+        border: 1px solid #313331;
+        text-transform: capitalize;
+        color: #313331;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: 0.6s all;
+        margin-left: 55px;
+
+        &:hover {
+          background-color: #313331;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

@@ -7,7 +7,6 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <h1>Đây là wrapper</h1>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
