@@ -1,9 +1,9 @@
 import ContainerMain from "pages/common/ContainerMain";
-import logo from '../../../assets/images/FooterPage/logo.png'
-import icon1 from '../../../assets/images/FooterPage/icon-1.png'
-import icon2 from '../../../assets/images/FooterPage/icon-2.png'
-import icon3 from '../../../assets/images/FooterPage/icon-3.png'
-import icon4 from '../../../assets/images/FooterPage/icon-4.png'
+import logo from '../../assets/images/FooterPage/logo.png'
+import icon1 from '../../assets/images/FooterPage/icon-1.png'
+import icon2 from '../../assets/images/FooterPage/icon-2.png'
+import icon3 from '../../assets/images/FooterPage/icon-3.png'
+import icon4 from '../../assets/images/FooterPage/icon-4.png'
 import './FooterPage.scss'
 
 export default function FooterPage() {
@@ -43,6 +43,9 @@ export default function FooterPage() {
             </div>
           </div>
         </ContainerMain>
+      </div>
+      <div className="zpVHgooayN">
+        OnPoint © 2022. All Rights Reserved.
       </div>
     </>
   )

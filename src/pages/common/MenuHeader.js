@@ -1,15 +1,21 @@
-import logo from '../../../assets/images/logo.png'
-import arrowDown from '../../../assets/images/Menu/arrow-down.png'
+import logo from '../../assets/images/logo.png'
+import arrowDown from '../../assets/images/Menu/arrow-down.png'
 import ContainerMain from 'pages/common/ContainerMain'
+import { useNavigate } from 'react-router-dom'
 import './MenuHeader.scss'
 
 export default function MenuHeader() {
+  const history = useNavigate()
+
+  const handleChangePage = (url) => {
+    history(url)
+  }
   return (
     <>
       <div className="iLADtaueIG">
         <ContainerMain>
           <div className="ikDOvZxITU">
-            <div className="kqAdKcHozX">
+            <div className="kqAdKcHozX" onClick={() => handleChangePage('/')}>
               <img alt="" className="EWvuKglUKN" src={logo} />
             </div>
             <div className="ZOuiUtHtvp">
@@ -22,8 +28,14 @@ export default function MenuHeader() {
                     </div>
                     <div className="FOsxgdKAoW">
                       <ul className="vPNTAJAHGT">
-                        <li className="mmhezgHPkc">Example</li>
-                        <li className="mmhezgHPkc">Example</li>
+                        <li className="mmhezgHPkc"
+                          onClick={() => handleChangePage('/product-store')}>E Commerce Store</li>
+                        <li className="mmhezgHPkc"
+                          onClick={() => handleChangePage('/product-integrated')}>Online-Offline Integrated</li>
+                        <li className="mmhezgHPkc"
+                          onClick={() => handleChangePage('/product-campaign')}>AI/Machine Learning Marketing Campaign Management</li>
+                        <li className="mmhezgHPkc"
+                          onClick={() => handleChangePage('/product-performance')}>Performance Dashboard</li>
                       </ul>
                     </div>
                   </li>

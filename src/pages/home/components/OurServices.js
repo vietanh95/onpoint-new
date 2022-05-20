@@ -1,8 +1,8 @@
 import ContainerMain from "pages/common/ContainerMain";
-import image1 from '../../../assets/images/OurServices/image-1.png'
-import image2 from '../../../assets/images/OurServices/image-2.png'
-import image3 from '../../../assets/images/OurServices/image-3.png'
-import image4 from '../../../assets/images/OurServices/image-4.png'
+import image1 from '../../../assets/images/Home/OurServices/image-1.png'
+import image2 from '../../../assets/images/Home/OurServices/image-2.png'
+import image3 from '../../../assets/images/Home/OurServices/image-3.png'
+import image4 from '../../../assets/images/Home/OurServices/image-4.png'
 import './OurServices.scss'
 
 export default function OurServices() {

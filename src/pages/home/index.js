@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
 import "./index.scss";
-import LangHeader from "./components/LangHeader";
-import MenuHeader from "./components/MenuHeader";
 import SliderHome from "./components/SliderHome";
 import DiscoverOnPoint from "./components/DiscoverOnPoint";
 import ClientsNumber from "./components/ClientsNumber";
@@ -11,7 +9,6 @@ import OurServices from "./components/OurServices";
 import Clients from "./components/Clients";
 import News from "./components/News";
 import TalkOur from "./components/TalkOur";
-import FooterPage from "./components/FooterPage";
 
 // const _lang = lang();
 function Home() {
@@ -52,20 +49,15 @@ function Home() {
 
   return (
     <>
-      {/* lang=========== */}
-      <LangHeader />
-      {/* menu=========== */}
-      <MenuHeader />
       {/* slider ============== */}
       <SliderHome />
       {/* discover on point ========= */}
-      {animationComponents?.map((component) => (
-        <section>
+      {animationComponents?.map((component, key) => (
+        <section key={key}>
           <div className="container reveal">{component}</div>
         </section>
       ))}
-      {/* FooterPage ========= */}
-      <FooterPage />
+      
     </>
   );
 }

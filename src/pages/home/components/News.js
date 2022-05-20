@@ -1,7 +1,5 @@
 import ContainerMain from "pages/common/ContainerMain";
-import image1 from "../../../assets/images/News/image-1.png";
-import image2 from "../../../assets/images/News/image-2.png";
-import image3 from "../../../assets/images/News/image-3.png";
+import image1 from "../../../assets/images/Home/News/image-1.png";
 import Slider from "react-slick/lib/slider";
 import "./News.scss";
 
@@ -24,7 +22,7 @@ export default function News() {
           <Slider className="bYrVNJdzkW" {...settings} autoplay={true}>
             {[0, 1, 2, 4].map((item) => {
               return (
-                <div className="EePOugTXGX">
+                <div className="EePOugTXGX" key={item}>
                   <NewsCard data={item} />
                 </div>
               );

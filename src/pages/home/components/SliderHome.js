@@ -1,7 +1,7 @@
-import banner1 from '../../../assets/images/Slider/banner-1.png'
-import image1 from '../../../assets/images/Slider/image-1.png'
-import image2 from '../../../assets/images/Slider/image-2.png'
-import image3 from '../../../assets/images/Slider/image-3.png'
+import banner1 from '../../../assets/images/Home/Slider/banner-1.png'
+import image1 from '../../../assets/images/Home/Slider/image-1.png'
+import image2 from '../../../assets/images/Home/Slider/image-2.png'
+import image3 from '../../../assets/images/Home/Slider/image-3.png'
 import Slider from "react-slick/lib/slider";
 import './SliderHome.scss'
 import ContainerMain from 'pages/common/ContainerMain';
@@ -22,7 +22,7 @@ export default function SliderHome() {
             {
               [0, 1, 2, 3, 4, 5, 6].map((item) => {
                 return (
-                  <div className="ABlEMYolHz">
+                  <div className="ABlEMYolHz" key={item}>
                     <div className="lpvVqGcPTv"><img alt={''} className="YHNyOFnTTo" src={banner1} /></div>
                     <div className="qIfYHhThla">
                       <ContainerMain>

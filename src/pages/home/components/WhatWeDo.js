@@ -1,5 +1,5 @@
 import ContainerMain from "pages/common/ContainerMain";
-import image1 from '../../../assets/images/WhatWeDo/image-1.png'
+import image1 from '../../../assets/images/Home/WhatWeDo/image-1.png'
 import './WhatWeDo.scss'
 
 export default function WhatWeDo() {

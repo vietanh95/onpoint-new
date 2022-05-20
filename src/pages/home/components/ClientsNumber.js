@@ -1,5 +1,5 @@
 import ContainerMain from "pages/common/ContainerMain";
-import image1 from '../../../assets/images/ClientsNumber/image-1.png'
+import image1 from '../../../assets/images/Home/ClientsNumber/image-1.png'
 import './ClientsNumber.scss'
 
 export default function ClientsNumber() {
