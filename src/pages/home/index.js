@@ -1,8 +1,4 @@
-import * as React from "react";
-// import { lang } from "utils";
-
-
-
+import React, { useEffect } from "react";
 import "./index.scss";
 import LangHeader from "./components/LangHeader";
 import MenuHeader from "./components/MenuHeader";
@@ -19,6 +15,41 @@ import FooterPage from "./components/FooterPage";
 
 // const _lang = lang();
 function Home() {
+  const checkScrollTop = () => {
+    var reveals = document.querySelectorAll(".reveal");
+
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+
+      if (elementTop < windowHeight - elementVisible) {
+        console.log("reveals[i]", i);
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", checkScrollTop, true);
+    return () => {
+      window.removeEventListener("scroll", checkScrollTop);
+    };
+  }, []);
+
+  const animationComponents = [
+    <DiscoverOnPoint />,
+    <ClientsNumber />,
+    <WhatWeDo />,
+    <OurProducts />,
+    <OurServices />,
+    <Clients />,
+    <News />,
+    <TalkOur />,
+  ];
+
   return (
     <>
       {/* lang=========== */}
@@ -28,27 +59,15 @@ function Home() {
       {/* slider ============== */}
       <SliderHome />
       {/* discover on point ========= */}
-      <DiscoverOnPoint />
-      {/* Clients Number ========== */}
-      <ClientsNumber />
-      {/* what we do ========== */}
-      <WhatWeDo />
-      {/* Our Products ========= */}
-      <OurProducts />
-      {/* Our Services ======== */}
-      <OurServices />
-      {/* Clients ========= */}
-      <Clients />
-      {/* News ======= */}
-      <News />
-      {/* TalkOur ======== */}
-      <TalkOur />
+      {animationComponents?.map((component) => (
+        <section>
+          <div className="container reveal">{component}</div>
+        </section>
+      ))}
       {/* FooterPage ========= */}
       <FooterPage />
     </>
   );
 }
-
-
 
 export default Home;
