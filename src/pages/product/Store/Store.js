@@ -16,6 +16,7 @@ import icon3 from '../../../assets/images/Product/Store/icon-3.png'
 
 import './Store.scss'
 import WhyOcto from "../Common/WhyOcto";
+import GetStart from "../Common/GetStart";
 
 export default function Store() {
   return (
@@ -51,6 +52,7 @@ export default function Store() {
             Visit and experience OctoSells now!
           </div>
         </div>
+        <GetStart />
       </div>
     </>
   )

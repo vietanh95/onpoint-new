@@ -1,5 +1,8 @@
 import BannerHeader from "../Common/BannerHeader";
 import WhyProduct from "../Common/WhyProduct";
+import WhyOcto from "../Common/WhyOcto";
+import Business from "./components/Business";
+import GetStart from "../Common/GetStart";
 
 import banner from '../../../assets/images/Product/Integrated/banner-1.png'
 import logoBanner1 from '../../../assets/images/Product/Integrated/logo-banner-1.png'
@@ -9,17 +12,14 @@ import icon2 from '../../../assets/images/Product/Integrated/icon-2.png'
 import icon3 from '../../../assets/images/Product/Integrated/icon-3.png'
 import imageWork from '../../../assets/images/Product/Integrated/image-work.png'
 
-import WhyOcto from "../Common/WhyOcto";
-import Business from "./components/Business";
-
 export default function Integrated() {
   return (
     <>
       <BannerHeader
         banner={banner}
         logo={logoBanner1}
-        listTitle={['E-Commerce Store Management']}
-        description={'No. 1 Multichannel E-commerce Solution for Small & Medium Size Sellers'}
+        listTitle={['Online-Offline Integrated', 'Order Management']}
+        description={'O2O Order Management System to Enable Omni-channel Retail '}
       />
       <WhyProduct
         title={'What We Offer'}
@@ -47,6 +47,7 @@ export default function Integrated() {
           Visit and experience OctoSells now!
         </div>
       </div>
+      <GetStart />
     </>
   )
 }

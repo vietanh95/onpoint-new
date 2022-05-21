@@ -78,10 +78,10 @@ export default function Business() {
                       <li className="xQfqqWXoyC"><img alt="" src={icon4} className="YpmQpTetXG" /></li>
                       <li className="xQfqqWXoyC">High</li>
                       <li className="xQfqqWXoyC">Good</li>
-                      <li className="xQfqqWXoyC">Complex</li>
-                      <li className="xQfqqWXoyC"><img alt="" src={icon5} className="YpmQpTetXG" /></li>
+                      <li className="xQfqqWXoyC">Easy</li>
                       <li className="xQfqqWXoyC"><img alt="" src={icon4} className="YpmQpTetXG" /></li>
-                      <li className="xQfqqWXoyC">Slow</li>
+                      <li className="xQfqqWXoyC"><img alt="" src={icon4} className="YpmQpTetXG" /></li>
+                      <li className="xQfqqWXoyC">Quick</li>
                       <li className="xQfqqWXoyC JEUdKojqbv"><img alt="" src={icon4} className="YpmQpTetXG" /></li>
                       <li className="xQfqqWXoyC HKCPBIbYrQ">
                         <div className="ZnlsXoivfQ">
