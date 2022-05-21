@@ -2,6 +2,11 @@
   height: 990px;
   display: flex;
   align-items: center;
+
+  @media (max-width: 1200px) {
+    height: 550px;
+  }
+
   .SXWoNSFnQA {
     position: relative;
     .uPqRpFprlg {
@@ -12,6 +17,12 @@
       .UmXwjLKnhh {
         width: 730px;
         height: 416px;
+
+        @media (max-width: 1200px) {
+          max-width: 730px;
+          max-height: 416px;
+          width: 100%;
+        }
       }
     }
     .QnXkiWhkcu {
@@ -25,7 +36,24 @@
       display: flex;
       align-items: center;
       justify-content: space-around;
+
+      @media (max-width: 1200px) {
+        width: 100%;
+        max-width: 765px;
+      }
+
+      @media (max-width: 700px) {
+        display: block;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
       .osJnINuxtu {
+        @media (max-width: 700px) {
+          margin-bottom: 24px;
+        }
+
         .WEYhzIkQlt {
           font-weight: 500;
           font-size: 48px;
@@ -40,6 +68,11 @@
           line-height: 19px;
           text-align: center;
           color: #777777;
+
+          @media (max-width: 700px) {
+            max-width: unset;
+            text-align: center;
+          }
         }
       }
     }

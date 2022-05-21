@@ -2,11 +2,26 @@
   .mCjLcmpFPk {
     padding-top: 176px;
     padding-bottom: 208px;
+
+    @media (max-width: 700px) {
+      padding-top: 56px;
+      padding-bottom: 56px;
+    }
+
     .HyDfhggjXe {
       display: flex;
       justify-content: space-between;
       width: 910px;
       margin: 0 0 0 auto;
+
+      @media (max-width: 1200px) {
+        width: auto;
+      }
+
+      @media (max-width: 700px) {
+        display: block;
+      }
+
       .QfDoodNPUg {
         flex-basis: calc(50% - 10px);
         .rJbDXuhMZw {
@@ -17,6 +32,10 @@
           color: #313331;
           margin-top: 30px;
           margin-bottom: 80px;
+
+          @media (max-width: 700px) {
+            text-align: center;
+          }
         }
       }
       .LOKkhgrzEe {
@@ -34,6 +53,11 @@
       width: 100%;
       height: 445px;
       margin-bottom: 28px;
+
+      @media (max-width: 700px) {
+        height: 165px;
+        object-fit: cover;
+      }
     }
   }
   .qOriJZDUwq {

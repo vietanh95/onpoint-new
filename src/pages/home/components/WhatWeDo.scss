@@ -1,5 +1,10 @@
 .veojzQjoSI {
   padding-top: 130px;
+
+  @media (max-width: 700px) {
+    padding-top: 56px;
+  }
+
   .cXjKWozutF {
     position: relative;
     .KbFTqrRWSD {
@@ -7,6 +12,12 @@
       top: 0;
       left: 0;
       .uWXNYLrCyZ {
+        width: 778px;
+
+        @media (max-width: 1200px) {
+          width: 100%;
+          max-width: 778px;
+        }
       }
     }
 
@@ -16,6 +27,11 @@
       .kQFHTLqPss {
         width: 700px;
         position: relative;
+
+        @media (max-width: 1200px) {
+          width: 100%;
+          max-width: 700px;
+        }
 
         .YYQohNmAHv {
           margin-top: 20px;
@@ -36,6 +52,11 @@
           .StjvRqrbev {
             flex-basis: 50%;
             margin-bottom: 20px;
+
+            @media (max-width: 700px) {
+              flex-basis: 100%;
+            }
+
             .NIIdwOtIXI {
               padding: 31px 28px 36px 26px;
               .IydGkLszEC {

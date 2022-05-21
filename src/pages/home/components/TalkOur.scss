@@ -3,6 +3,12 @@
     background: #142944;
     height: 503px;
     padding-top: 51px;
+
+    @media (max-width: 1200px) {
+      height: auto;
+      padding-bottom: 40px;
+    }
+
     .KBfdetaVEx {
       font-weight: 500;
       font-size: 48px;
@@ -16,6 +22,16 @@
       justify-content: space-between;
       width: 790px;
       margin: auto;
+
+      @media (max-width: 1200px) {
+        width: calc(100% - 32px);
+        max-width: 790px;
+      }
+
+      @media (max-width: 700px) {
+        display: block;
+      }
+
       .iiJRBrULDD {
         flex-basis: calc(50% - 15px);
         .WgCqrkCtGE {

@@ -2,9 +2,66 @@ import logo from '../../assets/images/logo.png'
 import arrowDown from '../../assets/images/Menu/arrow-down.png'
 import ContainerMain from 'pages/common/ContainerMain'
 import { useNavigate } from 'react-router-dom'
+import { MenuFoldOutlined } from '@ant-design/icons'
 import './MenuHeader.scss'
+import { useState } from 'react'
+import MenuHeaderItem from './MenuHeaderItem'
+
+const menu = [
+  {
+    name: 'Products',
+    link: '',
+    children: [
+      { name: 'E Commerce Store', link: '/product-store' },
+      { name: 'Online-Offline Integrated', link: '/product-integrated' },
+      { name: 'AI/Machine Learning Marketing Campaign Management', link: '/product-campaign' },
+      { name: 'Performance Dashboard', link: '/product-performance' },
+    ]
+  },
+  {
+    name: 'Services',
+    link: '',
+    children: [
+      { name: 'Example', link: '/' },
+      { name: 'Example', link: '/' },
+      { name: 'Example', link: '/' },
+      { name: 'Example', link: '/' },
+    ]
+  },
+  {
+    name: 'Channels',
+    link: '',
+    children: [
+      { name: 'Example', link: '/' },
+      { name: 'Example', link: '/' },
+      { name: 'Example', link: '/' },
+      { name: 'Example', link: '/' },
+    ]
+  },
+  {
+    name: 'Clients & Partners',
+    link: '',
+    children: [
+      { name: 'Example', link: '/' },
+      { name: 'Example', link: '/' },
+      { name: 'Example', link: '/' },
+      { name: 'Example', link: '/' },
+    ]
+  },
+  {
+    name: 'Company',
+    link: '',
+    children: [
+      { name: 'Example', link: '/' },
+      { name: 'Example', link: '/' },
+      { name: 'Example', link: '/' },
+      { name: 'Example', link: '/' },
+    ]
+  },
+]
 
 export default function MenuHeader() {
+  const [showMenu, setShowMenu] = useState(false)
   const history = useNavigate()
 
   const handleChangePage = (url) => {
@@ -19,75 +76,22 @@ export default function MenuHeader() {
               <img alt="" className="EWvuKglUKN" src={logo} />
             </div>
             <div className="ZOuiUtHtvp">
-              <div className="qrhkBMYcGX">
-                <ul className="gGzOKdvNuu">
-                  <li className="wzChTCzOBu">
-                    <div className="ijgePvHfdq">
-                      <span className="dvkRvnvuKA">Products</span>
-                      <span className="mVtISIbDJs"><img src={arrowDown} alt="" className="NwbqGDMIDg" /></span>
-                    </div>
-                    <div className="FOsxgdKAoW">
-                      <ul className="vPNTAJAHGT">
-                        <li className="mmhezgHPkc"
-                          onClick={() => handleChangePage('/product-store')}>E Commerce Store</li>
-                        <li className="mmhezgHPkc"
-                          onClick={() => handleChangePage('/product-integrated')}>Online-Offline Integrated</li>
-                        <li className="mmhezgHPkc"
-                          onClick={() => handleChangePage('/product-campaign')}>AI/Machine Learning Marketing Campaign Management</li>
-                        <li className="mmhezgHPkc"
-                          onClick={() => handleChangePage('/product-performance')}>Performance Dashboard</li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li className="wzChTCzOBu">
-                    <div className="ijgePvHfdq">
-                      <span className="dvkRvnvuKA">Services</span>
-                      <span className="mVtISIbDJs"><img src={arrowDown} alt="" className="NwbqGDMIDg" /></span>
-                    </div>
-                    <div className="FOsxgdKAoW">
-                      <ul className="vPNTAJAHGT">
-                        <li className="mmhezgHPkc">Example</li>
-                        <li className="mmhezgHPkc">Example</li>
-                        <li className="mmhezgHPkc">Example</li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li className="wzChTCzOBu">
-                    <div className="ijgePvHfdq">
-                      <span className="dvkRvnvuKA">Channels</span>
-                      <span className="mVtISIbDJs"><img src={arrowDown} alt="" className="NwbqGDMIDg" /></span>
-                    </div>
-                    <div className="FOsxgdKAoW">
-                      <ul className="vPNTAJAHGT">
-                        <li className="mmhezgHPkc">Example</li>
-                        <li className="mmhezgHPkc">Example</li>
-                        <li className="mmhezgHPkc">Example</li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li className="wzChTCzOBu">
-                    <div className="ijgePvHfdq">
-                      <span className="dvkRvnvuKA">Clients & Partners</span>
-                      <span className="mVtISIbDJs"></span>
-                    </div>
-                  </li>
-                  <li className="wzChTCzOBu">
-                    <div className="ijgePvHfdq">
-                      <span className="dvkRvnvuKA">Company</span>
-                      <span className="mVtISIbDJs"><img src={arrowDown} alt="" className="NwbqGDMIDg" /></span>
-                    </div>
-                    <div className="FOsxgdKAoW">
-                      <ul className="vPNTAJAHGT">
-                        <li className="mmhezgHPkc">Example</li>
-                        <li className="mmhezgHPkc">Example</li>
-                        <li className="mmhezgHPkc">Example</li>
-                      </ul>
-                    </div>
-
-                  </li>
-                </ul>
+              {showMenu ? <div className='TNIwwzouys' onClick={() => setShowMenu(false)}></div> : null}
+              <div className='XZsqtMffgA' onClick={() => setShowMenu(!showMenu)}><MenuFoldOutlined /></div>
+              <div className={`VyaXyKqXLW ${showMenu ? 'HpUaUurwJO' : ''}`}>
+                <div className="qrhkBMYcGX">
+                  <ul className="gGzOKdvNuu">
+                    {
+                      menu.map((item, key) => {
+                        return (
+                          <MenuHeaderItem data={item} key={key} />
+                        )
+                      })
+                    }
+                  </ul>
+                </div>
+                <div className="IQCByjNAdN">Contact Us</div>
               </div>
-              <div className="IQCByjNAdN">Contact Us</div>
             </div>
           </div>
         </ContainerMain>

@@ -3,8 +3,24 @@
   padding-bottom: 85px;
   .SbnPNCEOwC {
     display: flex;
-    flex-basis: calc(25% - 12px);
+    justify-content: space-between;
+
+    @media (max-width: 1200px) {
+      flex-wrap: wrap;
+    }
+
     .NarqnYBhzg {
+      flex-basis: calc(25% - 12px);
+
+      @media (max-width: 1200px) {
+        flex-basis: calc(50% - 12px);
+        margin-bottom: 24px;
+      }
+
+      @media (max-width: 700px) {
+        flex-basis: calc(100%);
+      }
+
       .qmAiBSoPaS {
         margin-bottom: 31px;
         .FxcyepeBKq {

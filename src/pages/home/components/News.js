@@ -12,6 +12,32 @@ export default function News() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
 
   return (
@@ -20,7 +46,7 @@ export default function News() {
         <ContainerMain>
           <div className="svoVqdrGDg">In the News</div>
           <Slider className="bYrVNJdzkW" {...settings} autoplay={true}>
-            {[0, 1, 2, 4].map((item) => {
+            {[0, 1, 2, 3, 4, 5, 6].map((item) => {
               return (
                 <div className="EePOugTXGX" key={item}>
                   <NewsCard data={item} />
